@@ -32,8 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbList = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txttime = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -62,29 +63,42 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "담그기!";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // textBox1
+            // txttime
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 21);
-            this.textBox1.TabIndex = 4;
+            this.txttime.Location = new System.Drawing.Point(15, 72);
+            this.txttime.Name = "txttime";
+            this.txttime.Size = new System.Drawing.Size(250, 21);
+            this.txttime.TabIndex = 4;
             // 
             // timer1
             // 
             this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(13, 145);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(139, 12);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "3510 이세영 / 2019.05.27";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(291, 122);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(291, 169);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txttime);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cbList);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "TeaBagMaker";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,8 +109,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbList;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txttime;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
