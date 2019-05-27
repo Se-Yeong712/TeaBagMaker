@@ -12,7 +12,7 @@ namespace TeaBagMaker
     public partial class Form1 : Form
     {
 
-        string[] teaList = new String[] { "홍차", "녹차", "루이보스차", "국화차" };
+        string[] teaList = new String[] { "홍차 2분", "녹차 3분", "루이보스차 5분", "국화차 2분" };
         int[] timeList = new int[] { 2, 3, 5, 2 };
         string orgTea = "";
         int orgTime = 0;
